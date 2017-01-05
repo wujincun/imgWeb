@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div class="txtScroll-top">
+    <ul class="infoList">
+            <li>恭喜用户：<span>{{mobile}}</span>获得 <span>{{title}}</span></li>
+            <li>恭喜用户：<span>{{mobile}}</span>获得 <span>{{title}}</span></li>
+            <li>恭喜用户：<span>{{mobile}}</span>获得 <span>{{title}}</span></li>
+            <li>恭喜用户：<span>{{mobile}}</span>获得 <span>{{title}}</span></li>
+            <li>恭喜用户：<span>{{mobile}}</span>获得 <span>{{title}}</span></li>
+            <li>恭喜用户：<span>{{mobile}}</span>获得 <span>{{title}}</span></li>
+            <li>恭喜用户：<span>{{mobile}}</span>获得 <span>{{title}}</span></li>
+            <li>恭喜用户：<span>{{mobile}}</span>获得 <span>{{title}}</span></li>
+            <li>恭喜用户：<span>{{mobile}}</span>获得 <span>{{title}}</span></li>
+            <li>恭喜用户：<span>{{mobile}}</span>获得 <span>{{title}}</span></li>
+    </ul>
+</div>
+
+<script src="../jquery.js"></script>
+<script src="superslide.2.1.js"></script>
+<script>
+
+    jQuery(".txtScroll-top").slide({
+        mainCell:".infoList",
+        autoPlay:true,
+        effect:"topLoop",//topMarquee：上无缝循环滚动
+        vis:5,
+        autoPage: true,
+        interTime:1000,
+        trigger:"click"
+    });
+</script>
+</body>
+</html>
