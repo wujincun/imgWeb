@@ -12,7 +12,7 @@ var elevenGame = {
     timer: null,
     num: 4,
     API: {
-        getResultAjax: '/ajax/aj_springFestival002.php'
+        getResultAjax: 'mock.json'
     },
     _init: function () {
         $('.chunk' + this.num).addClass('active');
@@ -206,7 +206,7 @@ var CarouselAndHandleImg = {
     render(){
         let _this = this,carouselStr = '';
         $.ajax({
-            url: _this.API.renderAndUpImg,
+            url:"mock2.json",
             type: "GET",
             dataType: "json",
             data: {
@@ -219,12 +219,12 @@ var CarouselAndHandleImg = {
                 carouselStr += '<li class="carouselItem" data-title="'+ gift.gift +'">'+ gift.tel +'</li>';
                 _this.$carouselWrap.append(carouselStr);
             }
-            let carouselItem = _this.$carouselWrap.find('.carouselItem');
-            carouselItem.eq(1).addClass('active');
-            _this.$carouselTitle.text( carouselItem.eq(1).attr('data-title'));
+            let $carouselItem = _this.$carouselWrap.find('.carouselItem');
+            $carouselItem.eq(1).addClass('active');
+            _this.$carouselTitle.text( $carouselItem.eq(1).attr('data-title'));
             /*轮播*/
             for (let i = 0; i < _this.showNum; i++) {
-                $carouselItems.eq(i).clone(true).appendTo(_this.$carouselWrap);
+                $carouselItem.eq(i).clone(true).appendTo(_this.$carouselWrap);
             }
             _this.timer = setInterval(_this.animateUp.bind(_this), 2000);
             
@@ -239,7 +239,7 @@ var CarouselAndHandleImg = {
                         _this.$upload.find('.date').show();
                         _this.$upload.find('.uploadImgBtn').text('上传照片').removeClass('disable')
                     }
-                    handleImgEle(data)
+                    _this.handleImgEle(data)
                 }
             }
             /*参与人数*/
@@ -300,7 +300,7 @@ var CarouselAndHandleImg = {
                             }
                             function callback() {
                                 var data = _this.compress(img);
-                                _this.upload(data, file.type, $thisImgItem);
+                                _this.upload(data);
                                 img = null;
                             }
                         }
