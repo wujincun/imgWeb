@@ -64,8 +64,6 @@
             var reader = new FileReader();
             var li = document.createElement("li");
 //          获取图片大小
-            /*var size = file.size / 1024 > 1024 ? (~~(10 * file.size / 1024 / 1024)) / 10 + "MB" : ~~(file.size / 1024) + "KB";
-            li.innerHTML = '<div class="progress"><span></span></div><div class="size">' + size + '</div>';*/
             $(".img-list").append($(li));
             reader.onload = function() {
                 var result = this.result;

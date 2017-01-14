@@ -1,0 +1,14 @@
+{
+  "code": "201",
+  "msg"  : "",
+  "type":"mk",
+  "result"  :  {
+    "price": "10",
+    "allCoupon": "4500",
+    "dayCoupon": "500",
+    "total": "258",
+    "chanceMin": "81",
+    "chanceMax": "100"
+  },
+  "mobile":"13832674531"
+}

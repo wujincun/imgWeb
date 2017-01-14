@@ -1,0 +1,448 @@
+.clearfix:after{content:"";display:block;clear:both;}
+.fl{  float: left;  }
+.fr{float: right}
+
+.part{
+  margin-top: -0.1rem;
+  overflow: hidden;
+}
+.part1{
+  background: url("../img/background_01.jpg") center center no-repeat;
+  height: 746px;
+  background-size: contain;
+  .subheading{
+    width: 484px;
+    height: 66px;
+    margin: 323px 0 0 130px;
+  }
+}
+.part2{
+  background: url("../img/background_02.jpg") center center no-repeat;
+  height: 780px;
+  background-size: contain;
+  .rotateRuleBtn{
+    height: 120px;
+    width: 120px;
+    margin-left: 510px;
+  }
+  .slotMachineArea{
+    padding: 117px 138px 99px 144px;
+    position: relative;
+    .playArea{
+      .chunk{
+        height: 140px;
+        width: 140px;
+        box-shadow: 2px 6px 5px #ff7300;
+        margin: 0 15px 10px 0;
+        background-color: #fff;
+        border-radius: 10px;
+        display: -webkit-box;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        img{
+          display: inline-block;
+          width: 116px;
+          height: 116px;
+        }
+      }
+      .chunk.active{
+        background-color: #f61e56;
+      }
+    }
+  }
+  .playAreaTop{
+    .chunk{
+      float: left;
+    }
+  }
+  .playAreaMiddle{
+    height: 155px;
+    position: relative;
+    .startGame{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      right: 10px;
+      img{
+        width: 152px;
+        height: 152px;
+      }
+    }
+  }
+  .playAreaMid{
+    .chunk4{
+      position: absolute;
+      right: 140px;
+      top: 267px;
+    }
+    .chunk8{
+      position: absolute;
+      left: 144px;
+      top: 267px;
+    }
+  }
+  .playAreaBottom{
+    .chunk{
+      float: right;
+    }
+    .chunk5{
+      margin-right: 16px;
+    }
+  }
+}
+.part3{
+  background: url("../img/background_03.jpg") center center no-repeat;
+  height: 718px;
+  background-size: contain;
+  #carousel{
+    position: relative;
+    margin:190px 90px 55px 197px;
+    width: 354px;
+    height:140px;
+    overflow: hidden;
+    .carouselWrap {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      .carouselItem {
+        line-height: 40px;
+        margin-bottom: 6px;
+        background: url("../img/scrollBar.png") center center no-repeat;
+        background-size: contain;
+        text-align: center;
+      }
+      .carouselItem.active{
+        color: #ff1724;
+      }
+    }
+  }
+  .carouselTitle{
+    min-width: 229px;
+    height: 47px;
+    line-height: 47px;
+    margin: 0 auto;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    span{
+      display: inline-block;
+      padding: 0 25px;
+      background: url("../img/carouselTitleBack.png") center center no-repeat;
+      background-size: cover;
+      border-radius: 24px;
+      min-width: 228px;
+     /* background-color: #ef1e46;*/
+    }
+  }
+}
+.part4{
+  background: url("../img/background_04.jpg") center center no-repeat;
+  height: 676px;
+  background-size: contain;
+  position: relative;
+  .upImgRuleBtn{
+    position: absolute;
+    top: 0;
+    right: 110px;
+    height: 116px;
+    width: 116px;
+  }
+  .upImgArea{
+    padding:165px 39px 0 38px;
+    .date{
+      text-align: center;
+      color: #fff;
+      position: relative;
+      z-index: 10;
+    }
+    #choose{
+      display: none;
+      color: #fff;
+    }
+    #upload{
+      display: inline-block;
+      width: 228px;
+      height: 338px;
+      text-decoration: none;
+      position: relative;
+      img{
+        width: 228px;
+        height: 338px;
+      }
+      .date{
+        background: url("../img/dateBack.png") center center no-repeat;
+        width: 204px;
+        line-height: 46px;
+        font-size: 30px;
+        position: absolute;
+        top: 14px;
+        left: 12px;
+        background-size: contain;
+      }
+      .uploadImgBtn{
+        width: 154px;
+        line-height: 45px;
+        border: 1px solid #8924eb;
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+        color: #8924eb;
+        border-radius: 23px;
+        position: absolute;
+        left: 37px;
+        bottom: 25px;
+        box-sizing: border-box;
+      }
+    }
+    .imgList{
+      width: -webkit-calc(~"100% - 230px");
+      float: right;
+      .imgItem{
+        width: 142px;
+        height: 168px;
+        float: left;
+        margin: 0 0 2px 5px;
+        border-radius: 10px;
+        position: relative;
+        img{
+          width: 142px;
+          height: 168px;
+        }
+        .date{
+          background: url("../img/dateBack.png") center center no-repeat;
+          width: 126px;
+          line-height: 29px;
+          background-size: contain;
+          font-size: 20px;
+          position: absolute;
+          top: 7px;
+          left: 9px;
+        }
+      }
+    }
+  }
+  .usersNum{
+    margin: 26px auto 0;
+    width: 330px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+  }
+}
+.part5{
+  background: url("../img/background_05.jpg") center center no-repeat;
+  height: 680px;
+  background-size: contain;
+  .hrefArea{
+    padding:30px 125px 177px 125px;
+    font-size: 0;
+    .hrefBtn{
+      display: inline-block;
+      width: 240px;
+      height: 240px;
+      margin-right: 10px;
+    }
+  }
+}
+.popArea{
+  display: none;
+  color: #fff;
+  text-align: center;
+  .mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+  .popContentArea{
+      .popContent{
+        display: none;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        z-index: 2000;
+        border-radius: 25px;
+        .btn{
+          width: 300px;
+          height: 85px;
+          line-height: 85px;
+          position: absolute;
+          bottom: 87px;
+          left: 226px;
+        }
+        .close{
+          position: absolute;
+          background: url("../img/pop_close.png") center center no-repeat;
+          height: 220px;
+          width: 100%;
+          bottom: -220px;
+          left: 0;
+        }
+      }
+      .rotateRule{
+        background: url("../img/pop_rotateRule.png") center center no-repeat;
+        background-size: contain;
+        width: 610px;
+        height: 790px;
+        margin-left: -305px;
+        margin-top: -395px;
+      }
+      .upImgRule{
+        position: absolute;
+        background: url("../img/pop_ruleBackGround.jpg") center center repeat-y;
+        width: 610px;
+        margin-left: -305px;
+        margin-top: -60%;
+        padding: 34px 42px 73px;
+        background-size: contain;
+        box-sizing: border-box;
+        .titleImg{
+          background: url("../img/pop_ruleTitle.png") center center no-repeat;
+          height: 194px;
+          width: 524px;
+          background-size: contain;
+        }
+        .ruleContent{
+          font-size: 24px;
+          color: #fff;
+          line-height: 1.4;
+          .textJustify{
+            text-align: justify;
+            margin-bottom: 25px;
+          }
+          .textCenter{
+            text-align: center;
+            margin: 15px 0 40px;
+          }
+          .qrcode{
+              background: url("../img/qrcode.jpg") center center no-repeat;
+              width: 223px;
+              height: 223px;
+              background-size: contain;
+              margin: 0 auto;
+          }
+        }
+      }
+      .coupon,.getMaterial{
+        width: 750px;
+        height: 952px;
+        margin-left: -350px;
+        margin-top: -476px;
+      }
+      .oneChance,.noCoupon,.upFail{
+        width: 612px;
+        height: 870px;
+        margin-left: -305px;
+        margin-top: -435px;
+        background-size: contain;
+      }
+      .coupon{
+        display: block;
+        background: url("../img/pop_coupon.png") center center no-repeat;
+        background-size: contain;
+        .couponText{
+          margin-top: 374px;
+          font-size: 36px;
+          line-height: 46px;
+          span{
+            color: #eaf307;
+          }
+        }
+      }
+      .oneChance{
+        background: url("../img/pop_oneChance.png") center center no-repeat;
+        background-size: contain;
+      }
+      .noCoupon{
+        background: url("../img/pop_noCoupon.png") center center no-repeat;
+        background-size: contain;
+      }
+      .getMaterial{
+        background: url("../img/pop_success.png") center center no-repeat;
+        background-size: contain;
+        .popHead{
+          margin: 294px 0 37px;
+          div{
+            line-height: 70px;
+            font-weight: bold;
+          }
+          .title{
+            font-size: 58px;
+          }
+          .subTitle{
+            font-size: 36px;
+          }
+        }
+        .popBody{
+          margin: 0 169px 85px;
+          .phoneText{
+            font-size: 28px;
+            line-height: 54px;
+            text-align: left;
+          }
+          .phoneInput{
+            display: block;
+            width: 100%;
+            height: 65px;
+            padding: 12px 15px;
+            font-size: 30px;
+            color: #585858;
+            box-sizing: border-box;
+            border-radius: 6px;
+          }
+          .phoneHint{
+            visibility: hidden;
+            font-size: 24px;
+            line-height: 54px;
+            height: 54px;
+            color: #fde401;
+            text-align: right;
+          }
+        }
+        .popFoot{
+          .sureText{
+            line-height: 54px;
+            color: rgba(255,255,255,.6);
+          }
+          .submitBtn{
+            font-size: 36px;
+            color: #f62a36;
+            background-color: #ffeb18;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 43px;
+            box-shadow: 0 5px #b10c18;
+          }
+        }
+      }
+      .upFail{
+        background: url("../img/pop_fail.png") center center no-repeat;
+        background-size: contain;
+        .failText{
+          margin-top: 300px;
+          font-size: 36px;
+        }
+      }
+
+
+  }
+}
+.upImgHint{
+  display: none;
+  background-color: rgba(255,255,255, 0.3);
+  border-radius: 20px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-32%, -50%);
+  transform: translate(-32%, -50%);
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 10000;
+}
